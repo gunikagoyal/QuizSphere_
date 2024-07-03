@@ -5,7 +5,6 @@ import certifi
 import ssl
 import urllib.request
 from pytube import YouTube
-from dotenv import load_dotenv
 import os
 
 # Audio to Text
