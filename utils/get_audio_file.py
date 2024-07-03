@@ -5,7 +5,6 @@ import ssl
 import urllib.request
 import assemblyai as aai
 import streamlit as st
-from dotenv import load_dotenv
 import os
 
 # Video to Audio
