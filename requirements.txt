@@ -3,3 +3,4 @@ assemblyai
 clarifai
 streamlit
 fpdf
+dotenv
