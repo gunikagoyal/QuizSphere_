@@ -1,0 +1,23 @@
+# Imports
+import assemblyai as aai
+import streamlit as st
+import certifi
+import ssl
+import urllib.request
+from pytube import YouTube
+from dotenv import load_dotenv
+import os
+
+# Audio to Text
+def get_transcription():
+    aai.settings.api_key = st.secrets["AAI_API_KEY"]
+
+    # URL of the file to transcribe
+    FILE_URL = "audio.mp3"
+
+    transcriber = aai.Transcriber()
+    transcript = transcriber.transcribe(FILE_URL)
+
+    print("Audio to Text Converted.")
+
+    return transcript.text
