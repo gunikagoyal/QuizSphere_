@@ -3,5 +3,3 @@ assemblyai
 clarifai
 streamlit
 fpdf
-dotenv
-python-dotenv
